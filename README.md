@@ -53,7 +53,7 @@
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「如果你的人生只有柠檬，不妨配盐喝点龙舌兰。」 —— 我是谁：没有绝对安全的系统
+> 「要保持希望在每天清晨太阳升起。」 —— 自己
 
 </details>
 <!-- quote:end -->
