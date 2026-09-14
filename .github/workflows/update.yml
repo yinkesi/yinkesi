@@ -10,9 +10,15 @@ on:
 permissions:
   contents: write
 
+# 定时与手动/push 触发可能撞车，串行执行防止互相覆盖提交
+concurrency:
+  group: profile-update
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 

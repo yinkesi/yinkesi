@@ -15,6 +15,7 @@ const TOKEN = process.env.GITHUB_TOKEN;
 const DEMO = process.argv.includes('--demo');
 const README = 'README.md';
 const SVG_OUT = 'github-3d.svg';
+const STATS_OUT = 'github-stats.svg';
 
 /* ------- antigravity-drift 设计令牌 ------- */
 const C = {
@@ -34,6 +35,10 @@ const C = {
 };
 const LEVELS = ['#0e4429', '#006d32', '#26a641', '#39d353'];
 const levelColor = c => (c === 0 ? C.tileEmpty : LEVELS[Math.min(3, Math.ceil(c / 3) - 1 + (c > 8 ? 1 : 0))]);
+
+/* SVG 里语言条颜色：优先用主图表已取到的语言色，否则给默认灰蓝 */
+const LANG_FALLBACK = { JavaScript: '#f1e05a', TypeScript: '#3178c6', Python: '#3572A5', 'C++': '#f34b7d', C: '#555555', HTML: '#e34c26', CSS: '#563d7c', Java: '#b07219', Shell: '#89e051', Verilog: '#b2b7f8', MATLAB: '#e16737', other: '#6f7688' };
+const langColorOf = (name, d) => d.langs.find(l => l.name === name)?.color || LANG_FALLBACK[name] || '#6f7688';
 
 /* ---------------- 数据获取 ---------------- */
 
@@ -74,10 +79,9 @@ async function fetchRealData() {
   const days = cc.contributionCalendar.weeks.flatMap(w => w.contributionDays);
   const repos = u.repositories.nodes;
 
-  // 深色日历：API 给的是浅色阶，按贡献数映射到 GitHub 深色阶
+  // 深色日历：API 给的是浅色阶，统一按 levelColor 映射到深色阶
   for (const d of days) {
-    d.color = d.contributionCount === 0 ? C.tileEmpty
-      : LEVELS[Math.min(3, Math.floor((d.contributionCount - 1) / 3))];
+    d.color = levelColor(d.contributionCount);
   }
 
   let mergedPRs = 0;
@@ -405,7 +409,7 @@ function replaceBlock(text, tag, content) {
 async function fetchQuote() {
   try {
     const j = await fetch('https://v1.hitokoto.cn/?max_length=48').then(r => r.json());
-    return `<details>\n<summary>每日一句 · Daily Quote</summary>\n\n> 「${j.hitokoto}」 —— ${j.from || '佚名'}\n\n</details>`;
+    return `<details>\n<summary>每日一句 · Daily Quote</summary>\n\n> 「${esc(j.hitokoto)}」 —— ${esc(j.from || '佚名')}\n\n</details>`;
   } catch {
     return null; // 拉不到就保留 README 里的旧句子
   }
@@ -564,14 +568,10 @@ ${chips}
 `;
 }
 
-/* SVG 里语言条颜色：优先用主图表已取到的语言色，否则给默认灰蓝 */
-const LANG_FALLBACK = { JavaScript: '#f1e05a', TypeScript: '#3178c6', Python: '#3572A5', 'C++': '#f34b7d', C: '#555555', HTML: '#e34c26', CSS: '#563d7c', Java: '#b07219', Shell: '#89e051', Verilog: '#b2b7f8', MATLAB: '#e16737', other: '#6f7688' };
-const langColorOf = (name, d) => d.langs.find(l => l.name === name)?.color || LANG_FALLBACK[name] || '#6f7688';
-
 /* ---------------- main ---------------- */
 
 const data = DEMO ? demoData() : await fetchRealData();
 writeFileSync(SVG_OUT, makeSvg(data));
-writeFileSync('github-stats.svg', makeStatsSvg(data, calcStats(data.days, data.langBytes)));
-console.log(`✓ 已生成 ${SVG_OUT} + github-stats.svg（contributions=${data.totalContributions}, commits=${data.commits}, stars=${data.stars}, repos=${data.repos}）`);
+writeFileSync(STATS_OUT, makeStatsSvg(data, calcStats(data.days, data.langBytes)));
+console.log(`✓ 已生成 ${SVG_OUT} + ${STATS_OUT}（contributions=${data.totalContributions}, commits=${data.commits}, stars=${data.stars}, repos=${data.repos}）`);
 if (!DEMO) await updateReadme(data);
