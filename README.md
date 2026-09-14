@@ -6,7 +6,7 @@
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「知识是很美的，它们可以让你不出家门就了解这世上的许多事。」 —— 妖精的尾巴
+> 「春心莫共花争发，一寸相思一寸灰！」 —— 无题·飒飒东风细雨来
 
 </details>
 <!-- quote:end -->
