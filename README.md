@@ -54,7 +54,7 @@
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「要邃晓你的处境，凡人！」 —— 奥妮克希亚
+> 「地球还在旋转，太阳照常升起。我还有梦，尚待实现。」 —— 网易云音乐热评
 
 </details>
 <!-- quote:end -->
