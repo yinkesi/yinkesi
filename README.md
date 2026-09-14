@@ -45,15 +45,15 @@
 - `09.14` 推送 1 个提交至 **[yinkesi/yinkesi](https://github.com/yinkesi/yinkesi)**
 - `09.14` 推送 1 个提交至 **[yinkesi/shiji-madao](https://github.com/yinkesi/shiji-madao)**
 - `09.14` 开源了 **[yinkesi/wechat-analysis](https://github.com/yinkesi/wechat-analysis)**
-- `09.11` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
 - `09.12` 推送 1 个提交至 **[yinkesi/lumen-translate](https://github.com/yinkesi/lumen-translate)**
+- `09.11` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
 <!-- events:end -->
 
 <!-- quote:start -->
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「要保持希望在每天清晨太阳升起。」 —— 自己
+> 「用短暂的一生，书写无数离谱的故事。」 —— 互联网
 
 </details>
 <!-- quote:end -->

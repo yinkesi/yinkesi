@@ -418,7 +418,7 @@ async function fetchEvents(login) {
     headers: { Authorization: `Bearer ${TOKEN}` },
   }).then(r => r.json());
   if (!Array.isArray(evs)) return '- _暂时拉不到动态_';
-  const lines = [];
+  const items = [];
   const seen = new Set();
   for (const e of evs) {
     const fmt = TYPES[e.type];
@@ -428,9 +428,10 @@ async function fetchEvents(login) {
     seen.add(e.repo.name);
     const date = e.created_at.slice(5, 7) + '.' + e.created_at.slice(8, 10);
     const url = 'https://github.com/' + e.repo.name;
-    lines.push(`- \`${date}\` ${text}**[${e.repo.name}](${url})**`);
-    if (lines.length >= 5) break;
+    items.push({ date, text: `- \`${date}\` ${text}**[${e.repo.name}](${url})**`, at: e.created_at });
   }
+  items.sort((a, b) => b.at.localeCompare(a.at)); // 严格按时间倒序（API 顺序偶有乱序）
+  const lines = items.slice(0, 5).map(x => x.text);
   return lines.length ? lines.join('\n') : '- _暂无公开动态，快去写点代码～_';
 }
 
