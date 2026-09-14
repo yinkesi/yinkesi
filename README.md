@@ -53,7 +53,7 @@
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「用短暂的一生，书写无数离谱的故事。」 —— 互联网
+> 「闲暇阅几页，读几篇书。」 —— 精卫（关中王进行曲）
 
 </details>
 <!-- quote:end -->
