@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「即使窗外天寒地冻，吃一口肉，一切自有力量。」 —— 日食记
+> 「偏我来时不逢春，恰无一人再似我。」 —— 网络
 
 </details>
 <!-- quote:end -->
