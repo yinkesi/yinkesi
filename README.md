@@ -1,14 +1,15 @@
 <h1 align="center">你好，我是 yinkesi 👋</h1>
 
 <p align="center">
-  测绘与地理信息学院在读 · GIS / 遥感 / 地理数据可视化 · 数学建模 · 深度学习路上
+  测绘与地理信息学院在读 · 计算机双学位 · GIS / 遥感 / 地理数据可视化 · 数学建模 · 深度学习路上
 </p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=yinkesi&style=flat-square&color=5b9dff&label=VISITORS" alt="visitors"/>
 </p>
 
-- 🎓 测绘与地理信息学院 在读
+- 🎓 测绘与地理信息学院 在读 · 计算机双学位 修读中
+- 🖥️ 双学位目标：把地学数据与编程真正接起来 —— WebGIS / 空间数据结构 / 地理计算
 - 🛰 兴趣方向：GIS / 遥感 / 地理数据可视化
 - 🤖 正在跟着 nanoGPT · makemore · annotated-transformer 学深度学习
 - 🏛 备战 CUMCM 2026 数学建模
@@ -53,7 +54,7 @@
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「I just wanna rewind...」 —— 网易云Rewind评论区
+> 「要邃晓你的处境，凡人！」 —— 奥妮克希亚
 
 </details>
 <!-- quote:end -->
