@@ -43,7 +43,9 @@ const QUERY = `query($login: String!) {
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC,
                  orderBy: { field: STARGAZERS, direction: DESC }) {
       totalCount
-      nodes { name url description stargazerCount forkCount primaryLanguage { name color } }
+      nodes { name url description stargazerCount forkCount
+              repositoryTopics(first: 3) { nodes { topic { name } } }
+              primaryLanguage { name color } }
     }
     contributionsCollection {
       contributionCalendar {
@@ -129,6 +131,7 @@ async function fetchRealData() {
       lang: r.primaryLanguage?.name || '',
       langColor: r.primaryLanguage?.color || '#6f7688',
       stars: r.stargazerCount,
+      topics: (r.repositoryTopics?.nodes ?? []).map(n => n.topic.name),
     })),
     langBytes: await fetchLangBytes(LOGIN, repos.map(r => r.name)),
   };
@@ -439,17 +442,19 @@ async function fetchEvents(login) {
   return lines.length ? lines.join('\n') : '- _暂无公开动态，快去写点代码～_';
 }
 
-/* 精选仓库表（按 Star 排序，语言徽章用柔化色） */
+/* 精选仓库：两栏项目卡片（emoji + 简介 + 技术标签 + 实时 Star 徽章） */
 function reposTable(d) {
   if (!d.topRepos?.length) return '_暂无公开仓库_';
-  let rows = '';
-  for (const r of d.topRepos) {
-    const pill = r.lang
-      ? `<img src="https://img.shields.io/badge/${encodeURIComponent(r.lang)}-${soften(r.langColor).slice(1)}?style=flat-square" height="16" alt="${esc(r.lang)}"/>`
-      : '—';
-    rows += `| **[${r.name}](${r.url})** | ${r.description ? esc(r.description) : '—'} | ${pill} | ${r.stars} |\n`;
-  }
-  return `| 仓库 | 简介 | 语言 | ⭐ |\n| --- | --- | --- | --- |\n${rows}`;
+  const icons = ['🎮', '🎨', '🔍', '🌐', '🤖', '🧭', '🔭', '⚙️'];
+  let cells = '';
+  d.topRepos.forEach((r, i) => {
+    const tags = [r.lang, ...(r.topics || [])].filter(Boolean).slice(0, 4)
+      .map(t => '`' + t + '`').join(' ');
+    const star = `<img src="https://img.shields.io/github/stars/${d.login}/${r.name}?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>`;
+    cells += `<td width="50%" valign="top">\n\n### ${icons[i % icons.length]} [${r.name}](${r.url})\n\n${r.description ? esc(r.description) : '*暂无简介*'}\n\n${tags} · ${star}\n\n</td>\n`;
+    if (i % 2 === 1 && i !== d.topRepos.length - 1) cells += '</tr>\n<tr>\n';
+  });
+  return `<table>\n<tr>\n${cells}</tr>\n</table>`;
 }
 
 async function updateReadme(d) {
