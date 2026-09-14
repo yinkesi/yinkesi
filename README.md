@@ -94,17 +94,17 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 
 <!-- events:start -->
 - `09.14` 推送 1 个提交至 **[yinkesi/shiji-madao](https://github.com/yinkesi/shiji-madao)**
+- `09.14` 推送 1 个提交至 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
 - `09.14` 推送 1 个提交至 **[yinkesi/yinkesi](https://github.com/yinkesi/yinkesi)**
 - `09.14` 开源了 **[yinkesi/wechat-analysis](https://github.com/yinkesi/wechat-analysis)**
 - `09.12` 推送 1 个提交至 **[yinkesi/lumen-translate](https://github.com/yinkesi/lumen-translate)**
-- `09.11` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
 <!-- events:end -->
 
 <!-- quote:start -->
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「偏我来时不逢春，恰无一人再似我。」 —— 网络
+> 「听完这首歌后，我将原谅这个世界一天。」 —— 网易云音乐
 
 </details>
 <!-- quote:end -->
