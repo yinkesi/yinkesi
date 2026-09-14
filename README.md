@@ -21,17 +21,10 @@
 ## 📈 GitHub 统计
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=yinkesi&show_icons=true&hide_border=false&bg_color=0d0f15&title_color=e9ebf3&text_color=a2a9bd&icon_color=5b9dff&border_color=23293a&border_radius=18&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+  <img width="96%" src="./github-stats.svg" alt="年度统计"/>
+</p>
+<p align="center">
   <img height="170" src="https://streak-stats.demolab.com?user=yinkesi&background=0d0f15&border=23293a&border_radius=18&stroke=23293a&ring=5b9dff&fire=e87f89&currStreakNum=e9ebf3&currStreakLabel=5b9dff&sideNums=a2a9bd&sideLabels=a2a9bd&dates=6f7688" alt="Streak"/>
-</p>
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yinkesi&layout=compact&bg_color=0d0f15&title_color=e9ebf3&text_color=a2a9bd&border_color=23293a&border_radius=18&langs_count=8" alt="Top Languages"/>
-</p>
-<p align="center">
-  <img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=yinkesi&bg_color=0d0f15&color=a2a9bd&line=5b9dff&point=e87f89&area=true&area_color=b48ae0&border_color=23293a&radius=18&hide_border=false" alt="Activity Graph"/>
-</p>
-<p align="center">
-  <img width="96%" src="https://github-profile-trophy.vercel.app/?username=yinkesi&theme=discord&no-frame=true&column=4&margin-w=8&rank=SECRET,SSS,SS,S,AAA,AA,A,B,BB,C" alt="Trophies"/>
 </p>
 
 ## 📌 精选仓库
@@ -60,7 +53,7 @@
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「めまぐるしい景色の中,君だけが止まって見えた.」 —— グランドエスケープ
+> 「如果你的人生只有柠檬，不妨配盐喝点龙舌兰。」 —— 我是谁：没有绝对安全的系统
 
 </details>
 <!-- quote:end -->

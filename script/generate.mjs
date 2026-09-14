@@ -130,7 +130,33 @@ async function fetchRealData() {
       langColor: r.primaryLanguage?.color || '#6f7688',
       stars: r.stargazerCount,
     })),
+    langBytes: await fetchLangBytes(LOGIN, repos.map(r => r.name)),
   };
+}
+
+/* 逐仓库统计代码字节量，汇总出「语言分布（按代码量）」 */
+async function fetchLangBytes(login, repoNames) {
+  const totals = new Map();
+  await Promise.all(repoNames.map(async name => {
+    try {
+      const j = await fetch(`https://api.github.com/repos/${login}/${name}/languages`, {
+        headers: { Authorization: `Bearer ${TOKEN}` },
+      }).then(r => r.json());
+      for (const [lang, bytes] of Object.entries(j)) totals.set(lang, (totals.get(lang) || 0) + bytes);
+    } catch { /* 单仓库失败忽略 */ }
+  }));
+  return [...totals.entries()].map(([name, bytes]) => ({ name, bytes })).sort((a, b) => b.bytes - a.bytes);
+}
+
+/* 连续提交与单日峰值 */
+function calcStats(days, langBytes) {
+  let longest = 0, run = 0;
+  for (const d of days) { run = d.contributionCount > 0 ? run + 1 : 0; longest = Math.max(longest, run); }
+  let cur = 0;
+  for (let i = days.length - 1; i >= 0 && days[i].contributionCount > 0; i--) cur++;
+  const peak = days.reduce((m, d) => d.contributionCount > m.count ? { count: d.contributionCount, date: d.date } : m, { count: 0, date: '' });
+  const totalBytes = langBytes.reduce((s, l) => s + l.bytes, 0);
+  return { cur, longest, peak, langBytes, totalBytes };
 }
 
 /* 演示数据：模仿稀疏贡献 + 末尾一簇高塔 */
@@ -165,6 +191,11 @@ function demoData() {
       { name: 'apple-park-3d', url: 'https://github.com/yinkesi/apple-park-3d', description: 'Apple Park 三维重建', lang: 'C++', langColor: '#f34b7d', stars: 1 },
       { name: 'cumcm2026', url: 'https://github.com/yinkesi/cumcm2026', description: '全国大学生数学建模竞赛', lang: 'Python', langColor: '#3572A5', stars: 1 },
       { name: 'nanogpt-lecture', url: 'https://github.com/yinkesi/nanogpt-lecture', description: 'karpathy nanoGPT 跟练', lang: 'JavaScript', langColor: '#f1e05a', stars: 0 },
+    ],
+    langBytes: [
+      { name: 'TypeScript', bytes: 820e3 }, { name: 'JavaScript', bytes: 540e3 },
+      { name: 'Python', bytes: 430e3 }, { name: 'C++', bytes: 260e3 },
+      { name: 'C', bytes: 120e3 }, { name: 'HTML', bytes: 60e3 },
     ],
   };
 }
@@ -425,9 +456,112 @@ async function updateReadme(d) {
   writeFileSync(README, md);
 }
 
+/* ---------------- 年度统计卡（自绘，无第三方依赖） ---------------- */
+
+const MMM = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+const fmtBytes = b => b >= 1e6 ? (b / 1e6).toFixed(1) + ' MB' : b >= 1e3 ? Math.round(b / 1e3) + ' KB' : String(b);
+
+function makeStatsSvg(d, s) {
+  const W = 1050, H = 640;
+  /* --- 年度贡献面积图 --- */
+  const gx0 = 48, gx1 = 1002, gy0 = 118, gy1 = 298;
+  const n = d.days.length;
+  const maxC = Math.max(5, ...d.days.map(x => x.contributionCount));
+  const X = i => gx0 + i * (gx1 - gx0) / (n - 1);
+  const Y = c => gy1 - (c / maxC) * (gy1 - gy0);
+  const line = d.days.map((x, i) => `${f1(X(i))},${f1(Y(x.contributionCount))}`).join(' ');
+  let chart = '';
+  const step = Math.max(1, Math.ceil(maxC / 4));
+  for (let c = step; c <= maxC; c += step) {
+    const y = Y(c);
+    chart += `<line x1="${gx0}" y1="${f1(y)}" x2="${gx1}" y2="${f1(y)}" stroke="${C.lineSoft}" stroke-dasharray="2 5"/>`;
+    chart += `<text x="${gx1}" y="${f1(y - 4)}" font-family="${MONO}" font-size="8.5" fill="${C.ink3}" text-anchor="end">${c}</text>`;
+  }
+  chart += `<line x1="${gx0}" y1="${gy1}" x2="${gx1}" y2="${gy1}" stroke="${C.line}"/>`;
+  for (let i = 0; i < n; i++) {
+    if (d.days[i].date.slice(8, 10) !== '01') continue;
+    const x = X(i);
+    chart += `<line x1="${f1(x)}" y1="${gy1}" x2="${f1(x)}" y2="${gy1 + 5}" stroke="${C.ink3}"/>`;
+    chart += `<text x="${f1(x)}" y="${gy1 + 17}" font-family="${MONO}" font-size="9" letter-spacing="1" fill="${C.ink3}">${MMM[+d.days[i].date.slice(5, 7) - 1]}</text>`;
+  }
+  chart += `<polygon points="${line} ${gx1},${gy1} ${gx0},${gy1}" fill="url(#gradArea)"/>`;
+  chart += `<polyline points="${line}" fill="none" stroke="url(#gradRing2)" stroke-width="2" stroke-linejoin="round"/>`;
+  const pi = d.days.findIndex(x => x.contributionCount === s.peak.count);
+  if (s.peak.count > 0 && pi >= 0) {
+    const px = Math.min(X(pi), gx1 - 110), py = Y(s.peak.count);
+    chart += `<circle cx="${f1(X(pi))}" cy="${f1(py)}" r="3.5" fill="${C.pink}"/>`;
+    chart += `<text x="${f1(px + 8)}" y="${f1(py - 8)}" font-family="${MONO}" font-size="9.5" fill="${C.pink}">峰值 ${s.peak.count} · ${s.peak.date.slice(5).replace('-', '.')}</text>`;
+  }
+
+  /* --- 语言分布（按代码字节量）--- */
+  const langs = s.langBytes.slice(0, 6);
+  const total = s.langBytes.reduce((x, l) => x + l.bytes, 0) || 1;
+  const bx = 175, bw = 430;
+  let bars = `<text x="48" y="352" font-family="${MONO}" font-size="10.5" letter-spacing="1.8" fill="${C.ink2}">语言分布 · LANGUAGES BY BYTES</text>`;
+  langs.forEach((l, i) => {
+    const y = 376 + i * 30, w = Math.max(4, l.bytes / langs[0].bytes * bw);
+    const pct = (l.bytes / total * 100).toFixed(1);
+    bars += `<text x="48" y="${f1(y + 11)}" font-family="${SANS}" font-size="12.5" fill="${C.ink2}">${esc(l.name)}</text>`;
+    bars += `<rect x="${bx}" y="${y}" width="${bw}" height="12" rx="6" fill="rgba(233,235,243,.06)"/>`;
+    bars += `<rect x="${bx}" y="${y}" width="${f1(w)}" height="12" rx="6" fill="${soften(langColorOf(l.name, d))}"/>`;
+    bars += `<text x="${bx + bw + 12}" y="${f1(y + 10)}" font-family="${MONO}" font-size="10" fill="${C.ink3}">${pct}%</text>`;
+  });
+
+  /* --- 成就瓷砖 --- */
+  const tiles = [
+    { num: String(s.cur), label: '当前连续提交 · DAYS' },
+    { num: String(s.longest), label: '最长连续提交 · DAYS' },
+    { num: String(s.peak.count), label: '单日贡献峰值 · PEAK' },
+    { num: fmtBytes(s.totalBytes), label: '公开代码总量 · BYTES' },
+  ];
+  let chips = '';
+  tiles.forEach((t, i) => {
+    const tx = 672 + (i % 2) * 170, ty = 366 + Math.floor(i / 2) * 104;
+    chips += `<rect x="${tx}" y="${ty}" width="158" height="92" rx="14" fill="${C.glass}" stroke="${C.line}"/>`;
+    chips += `<text x="${tx + 16}" y="${ty + 46}" font-family="${SANS}" font-size="24" font-weight="700" letter-spacing="-0.5" fill="url(#gradText2)">${esc(t.num)}</text>`;
+    chips += `<text x="${tx + 16}" y="${ty + 70}" font-family="${MONO}" font-size="8.5" letter-spacing="1" fill="${C.ink3}">${esc(t.label)}</text>`;
+  });
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+<defs>
+<linearGradient id="gradText2" x1="0" y1="0" x2="1" y2="0"><stop offset="8%" stop-color="${C.grad[0]}"/><stop offset="52%" stop-color="${C.grad[1]}"/><stop offset="96%" stop-color="${C.grad[2]}"/></linearGradient>
+<linearGradient id="gradRing2" x1="0" y1="0" x2="1" y2="0"><stop offset="8%" stop-color="${C.grad[0]}"/><stop offset="52%" stop-color="${C.grad[1]}"/><stop offset="96%" stop-color="${C.grad[2]}"/></linearGradient>
+<linearGradient id="gradArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="${C.blue}" stop-opacity=".35"/><stop offset="100%" stop-color="${C.blue}" stop-opacity="0"/></linearGradient>
+<radialGradient id="glow2a"><stop offset="0%" stop-color="${C.blue}" stop-opacity=".14"/><stop offset="100%" stop-color="${C.blue}" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow2b"><stop offset="0%" stop-color="${C.violet}" stop-opacity=".12"/><stop offset="100%" stop-color="${C.violet}" stop-opacity="0"/></radialGradient>
+<radialGradient id="vig2" cx=".5" cy=".45" r=".75"><stop offset="62%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".5"/></radialGradient>
+<filter id="grain2"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<clipPath id="card2"><rect width="${W}" height="${H}" rx="26"/></clipPath>
+</defs>
+<g clip-path="url(#card2)">
+<rect width="${W}" height="${H}" fill="${C.bg}"/>
+<ellipse cx="160" cy="100" rx="320" ry="220" fill="url(#glow2a)"/>
+<ellipse cx="900" cy="500" rx="340" ry="240" fill="url(#glow2b)"/>
+<rect width="${W}" height="${H}" fill="url(#vig2)"/>
+<rect width="${W}" height="${H}" filter="url(#grain2)" opacity="0.05"/>
+<rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="26" fill="none" stroke="rgba(233,235,243,.08)"/>
+<text x="48" y="56" font-family="${MONO}" font-size="11" letter-spacing="2.2" fill="${C.ink2}">GITHUB · @${d.login.toUpperCase()} — 年度统计</text>
+<text x="1002" y="56" font-family="${MONO}" font-size="10.5" letter-spacing="1.2" fill="${C.ink3}" text-anchor="end">SELF-HOSTED · NO THIRD-PARTY</text>
+<line x1="48" y1="74" x2="1002" y2="74" stroke="${C.lineSoft}"/>
+<text x="48" y="104" font-family="${MONO}" font-size="10.5" letter-spacing="1.8" fill="${C.ink2}">近一年贡献曲线 · CONTRIBUTIONS 1Y</text>
+${chart}
+${bars}
+${chips}
+<text x="48" y="622" font-family="${MONO}" font-size="9.5" letter-spacing="1.5" fill="${C.ink3}">ANNUAL OVERVIEW</text>
+<text x="1002" y="622" font-family="${MONO}" font-size="9.5" letter-spacing="1.5" fill="${C.ink3}" text-anchor="end">GENERATED DAILY BY GITHUB ACTIONS</text>
+</g>
+</svg>
+`;
+}
+
+/* SVG 里语言条颜色：优先用主图表已取到的语言色，否则给默认灰蓝 */
+const LANG_FALLBACK = { JavaScript: '#f1e05a', TypeScript: '#3178c6', Python: '#3572A5', 'C++': '#f34b7d', C: '#555555', HTML: '#e34c26', CSS: '#563d7c', Java: '#b07219', Shell: '#89e051', Verilog: '#b2b7f8', MATLAB: '#e16737', other: '#6f7688' };
+const langColorOf = (name, d) => d.langs.find(l => l.name === name)?.color || LANG_FALLBACK[name] || '#6f7688';
+
 /* ---------------- main ---------------- */
 
 const data = DEMO ? demoData() : await fetchRealData();
 writeFileSync(SVG_OUT, makeSvg(data));
-console.log(`✓ 已生成 ${SVG_OUT}（contributions=${data.totalContributions}, commits=${data.commits}, stars=${data.stars}, repos=${data.repos}）`);
+writeFileSync('github-stats.svg', makeStatsSvg(data, calcStats(data.days, data.langBytes)));
+console.log(`✓ 已生成 ${SVG_OUT} + github-stats.svg（contributions=${data.totalContributions}, commits=${data.commits}, stars=${data.stars}, repos=${data.repos}）`);
 if (!DEMO) await updateReadme(data);
