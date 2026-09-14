@@ -233,11 +233,15 @@ function gridSvg(days) {
     const color = c.color || C.tileEmpty;
     const top = `${f1(x)},${f1(y)} ${f1(x + 2 * M)},${f1(y + M)} ${f1(x)},${f1(y + 2 * M)} ${f1(x - 2 * M)},${f1(y + M)}`;
     if (h > 0) {
-      tiles += `<polygon points="${f1(x - 2 * M)},${f1(y + M)} ${f1(x)},${f1(y + 2 * M)} ${f1(x)},${f1(y + 2 * M + h)} ${f1(x - 2 * M)},${f1(y + M + h)}" fill="${shade(color, 0.82)}"/>`;
-      tiles += `<polygon points="${f1(x + 2 * M)},${f1(y + M)} ${f1(x)},${f1(y + 2 * M)} ${f1(x)},${f1(y + 2 * M + h)} ${f1(x + 2 * M)},${f1(y + M + h)}" fill="${shade(color, 0.6)}"/>`;
-      glows += `<ellipse cx="${f1(x)}" cy="${f1(y + 2 * M + h)}" rx="17" ry="8" fill="${color}" opacity="0.32"/>`;
+      // 柱体立在网格上：顶面向上抬升 h，墙面从抬升后的顶边连回格子原位
+      const ty = y - h;
+      tiles += `<polygon points="${f1(x - 2 * M)},${f1(ty + M)} ${f1(x)},${f1(ty + 2 * M)} ${f1(x)},${f1(y + 2 * M)} ${f1(x - 2 * M)},${f1(y + M)}" fill="${shade(color, 0.82)}"/>`;
+      tiles += `<polygon points="${f1(x + 2 * M)},${f1(ty + M)} ${f1(x)},${f1(ty + 2 * M)} ${f1(x)},${f1(y + 2 * M)} ${f1(x + 2 * M)},${f1(y + M)}" fill="${shade(color, 0.6)}"/>`;
+      tiles += `<polygon points="${f1(x)},${f1(ty)} ${f1(x + 2 * M)},${f1(ty + M)} ${f1(x)},${f1(ty + 2 * M)} ${f1(x - 2 * M)},${f1(ty + M)}" fill="${color}" stroke="rgba(233,235,243,.07)" stroke-width="1"/>`;
+      glows += `<ellipse cx="${f1(x)}" cy="${f1(y + 2 * M)}" rx="17" ry="8" fill="${color}" opacity="0.32"/>`;
+    } else {
+      tiles += `<polygon points="${top}" fill="${color}" stroke="rgba(233,235,243,.09)" stroke-width="1"/>`;
     }
-    tiles += `<polygon points="${top}" fill="${color}" stroke="rgba(233,235,243,.09)" stroke-width="1"/>`;
   }
   return `<g>${tiles}</g><g filter="url(#soft)">${glows}</g>`;
 }

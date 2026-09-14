@@ -53,7 +53,7 @@
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「闲暇阅几页，读几篇书。」 —— 精卫（关中王进行曲）
+> 「我的生命，本来就在不假思索地奔向死亡。」 —— 弥留之国的爱丽丝
 
 </details>
 <!-- quote:end -->
