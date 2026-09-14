@@ -43,7 +43,7 @@ const QUERY = `query($login: String!) {
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC,
                  orderBy: { field: STARGAZERS, direction: DESC }) {
       totalCount
-      nodes { name stargazerCount forkCount primaryLanguage { name color } }
+      nodes { name url description stargazerCount forkCount primaryLanguage { name color } }
     }
     contributionsCollection {
       contributionCalendar {
@@ -122,6 +122,14 @@ async function fetchRealData() {
     stars: repos.reduce((s, r) => s + r.stargazerCount, 0),
     forks: repos.reduce((s, r) => s + r.forkCount, 0),
     langs,
+    topRepos: repos.filter(r => r.name !== LOGIN).slice(0, 4).map(r => ({
+      name: r.name,
+      url: r.url,
+      description: r.description || '',
+      lang: r.primaryLanguage?.name || '',
+      langColor: r.primaryLanguage?.color || '#6f7688',
+      stars: r.stargazerCount,
+    })),
   };
 }
 
@@ -151,6 +159,12 @@ function demoData() {
       { name: 'TypeScript', color: '#3178c6', count: 1 },
       { name: 'Python', color: '#3572A5', count: 1 },
       { name: 'other', color: '#444d55', count: 1 },
+    ],
+    topRepos: [
+      { name: 'lumen-translate', url: 'https://github.com/yinkesi/lumen-translate', description: '沉浸式翻译工具', lang: 'TypeScript', langColor: '#3178c6', stars: 2 },
+      { name: 'apple-park-3d', url: 'https://github.com/yinkesi/apple-park-3d', description: 'Apple Park 三维重建', lang: 'C++', langColor: '#f34b7d', stars: 1 },
+      { name: 'cumcm2026', url: 'https://github.com/yinkesi/cumcm2026', description: '全国大学生数学建模竞赛', lang: 'Python', langColor: '#3572A5', stars: 1 },
+      { name: 'nanogpt-lecture', url: 'https://github.com/yinkesi/nanogpt-lecture', description: 'karpathy nanoGPT 跟练', lang: 'JavaScript', langColor: '#f1e05a', stars: 0 },
     ],
   };
 }
@@ -359,13 +373,56 @@ async function fetchQuote() {
   }
 }
 
-async function updateReadme() {
-  let md = readFileSync(README, 'utf8');
-  const q = await fetchQuote();
-  if (q) {
-    md = replaceBlock(md, 'quote', q);
-    writeFileSync(README, md);
+/* 公开事件流 → 最近动态（中文渲染） */
+async function fetchEvents(login) {
+  const TYPES = {
+    PushEvent: e => `推送 ${e.payload.size || 1} 个提交至 `,
+    CreateEvent: e => e.payload.ref_type === 'repository' ? '创建了仓库 ' : null,
+    WatchEvent: () => '给 ',
+    ForkEvent: () => '复刻了 ',
+    ReleaseEvent: () => '发布了 ',
+    PublicEvent: () => '开源了 ',
+  };
+  const evs = await fetch(`https://api.github.com/users/${login}/events/public?per_page=60`, {
+    headers: { Authorization: `Bearer ${TOKEN}` },
+  }).then(r => r.json());
+  if (!Array.isArray(evs)) return '- _暂时拉不到动态_';
+  const lines = [];
+  const seen = new Set();
+  for (const e of evs) {
+    const fmt = TYPES[e.type];
+    if (!fmt || seen.has(e.repo.name)) continue;
+    const text = fmt(e);
+    if (!text) continue; // 忽略建分支等噪音
+    seen.add(e.repo.name);
+    const date = e.created_at.slice(5, 7) + '.' + e.created_at.slice(8, 10);
+    const url = 'https://github.com/' + e.repo.name;
+    lines.push(`- \`${date}\` ${text}**[${e.repo.name}](${url})**`);
+    if (lines.length >= 5) break;
   }
+  return lines.length ? lines.join('\n') : '- _暂无公开动态，快去写点代码～_';
+}
+
+/* 精选仓库表（按 Star 排序，语言徽章用柔化色） */
+function reposTable(d) {
+  if (!d.topRepos?.length) return '_暂无公开仓库_';
+  let rows = '';
+  for (const r of d.topRepos) {
+    const pill = r.lang
+      ? `<img src="https://img.shields.io/badge/${encodeURIComponent(r.lang)}-${soften(r.langColor).slice(1)}?style=flat-square" height="16" alt="${esc(r.lang)}"/>`
+      : '—';
+    rows += `| **[${r.name}](${r.url})** | ${r.description ? esc(r.description) : '—'} | ${pill} | ${r.stars} |\n`;
+  }
+  return `| 仓库 | 简介 | 语言 | ⭐ |\n| --- | --- | --- | --- |\n${rows}`;
+}
+
+async function updateReadme(d) {
+  let md = readFileSync(README, 'utf8');
+  md = replaceBlock(md, 'repos', reposTable(d));
+  md = replaceBlock(md, 'events', await fetchEvents(d.login));
+  const q = await fetchQuote();
+  if (q) md = replaceBlock(md, 'quote', q);
+  writeFileSync(README, md);
 }
 
 /* ---------------- main ---------------- */
@@ -373,4 +430,4 @@ async function updateReadme() {
 const data = DEMO ? demoData() : await fetchRealData();
 writeFileSync(SVG_OUT, makeSvg(data));
 console.log(`✓ 已生成 ${SVG_OUT}（contributions=${data.totalContributions}, commits=${data.commits}, stars=${data.stars}, repos=${data.repos}）`);
-if (!DEMO) await updateReadme();
+if (!DEMO) await updateReadme(data);
