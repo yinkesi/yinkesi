@@ -53,7 +53,7 @@
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「我的生命，本来就在不假思索地奔向死亡。」 —— 弥留之国的爱丽丝
+> 「I just wanna rewind...」 —— 网易云Rewind评论区
 
 </details>
 <!-- quote:end -->
