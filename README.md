@@ -59,31 +59,31 @@
 </td>
 <td width="50%" valign="top">
 
-### 🎨 [dsh-new-designed-ui](https://github.com/yinkesi/dsh-new-designed-ui)
+### 🎨 [zcode-vscode](https://github.com/yinkesi/zcode-vscode)
 
-Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
+ZCode Chat for VSCode — 在 VSCode 右侧栏直接使用 ZCode/GLM 编程助手的插件（复用 ZCode 桌面端凭据，驱动完整 Agent）
 
-`JavaScript` `deepseek` `skin` `theme` · <img src="https://img.shields.io/github/stars/yinkesi/dsh-new-designed-ui?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`JavaScript` `ai-assistant` `chatbot` `glm` · <img src="https://img.shields.io/github/stars/yinkesi/zcode-vscode?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🔍 [wechat-analysis](https://github.com/yinkesi/wechat-analysis)
+### 🔍 [dsh-new-designed-ui](https://github.com/yinkesi/dsh-new-designed-ui)
 
-微信聊天记录工具链：密钥提取 + SQLCipher4 解密 + 发言统计/关键词/LDA 话题聚类，一键生成 HTML 报告
+Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 
-`Python` `chat-analysis` `data-analysis` `python` · <img src="https://img.shields.io/github/stars/yinkesi/wechat-analysis?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`JavaScript` `deepseek` `skin` `theme` · <img src="https://img.shields.io/github/stars/yinkesi/dsh-new-designed-ui?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 <td width="50%" valign="top">
 
-### 🌐 [lumen-translate](https://github.com/yinkesi/lumen-translate)
+### 🌐 [shiji-chunqiu-bi](https://github.com/yinkesi/shiji-chunqiu-bi)
 
-苹果风格划词翻译浏览器扩展 · Chrome/Edge MV3 · 多引擎自动降级 · 零依赖
+*暂无简介*
 
-`JavaScript` `browser-extension` `chrome-extension` `edge-extension` · <img src="https://img.shields.io/github/stars/yinkesi/lumen-translate?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`HTML` · <img src="https://img.shields.io/github/stars/yinkesi/shiji-chunqiu-bi?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 </tr>
@@ -93,18 +93,18 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
-- `09.14` 推送 1 个提交至 **[yinkesi/shiji-madao](https://github.com/yinkesi/shiji-madao)**
-- `09.14` 推送 1 个提交至 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
+- `09.14` 开源了 **[yinkesi/shiji-chunqiu-bi](https://github.com/yinkesi/shiji-chunqiu-bi)**
 - `09.14` 推送 1 个提交至 **[yinkesi/yinkesi](https://github.com/yinkesi/yinkesi)**
-- `09.14` 开源了 **[yinkesi/wechat-analysis](https://github.com/yinkesi/wechat-analysis)**
-- `09.12` 推送 1 个提交至 **[yinkesi/lumen-translate](https://github.com/yinkesi/lumen-translate)**
+- `09.14` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
+- `09.14` 推送 1 个提交至 **[yinkesi/wechat-analysis](https://github.com/yinkesi/wechat-analysis)**
+- `09.14` 推送 1 个提交至 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
 <!-- events:end -->
 
 <!-- quote:start -->
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「听完这首歌后，我将原谅这个世界一天。」 —— 网易云音乐
+> 「都说人无远虑必有近忧，这句话简单来讲就是人这一辈子就没什么安生的日子。」 —— 摸鱼事务所
 
 </details>
 <!-- quote:end -->
