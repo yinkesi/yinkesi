@@ -79,11 +79,11 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 </td>
 <td width="50%" valign="top">
 
-### 🌐 [shiji-chunqiu-bi](https://github.com/yinkesi/shiji-chunqiu-bi)
+### 🌐 [shiji-madao-open](https://github.com/yinkesi/shiji-madao-open)
 
-*暂无简介*
+实验史记·马刀行 —— 开放校园探索 × 马刀战棋网页游戏（据音克思《实验史记》改编）
 
-`HTML` · <img src="https://img.shields.io/github/stars/yinkesi/shiji-chunqiu-bi?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`JavaScript` · <img src="https://img.shields.io/github/stars/yinkesi/shiji-madao-open?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 </tr>
@@ -93,18 +93,18 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
+- `09.16` 推送 1 个提交至 **[yinkesi/shiji-madao-open](https://github.com/yinkesi/shiji-madao-open)**
+- `09.15` 给 **[zdz10124-dev/ForLearn3d](https://github.com/zdz10124-dev/ForLearn3d)**
+- `09.15` 给 **[zdz10124-dev/chatgpt-visible-history-exporter](https://github.com/zdz10124-dev/chatgpt-visible-history-exporter)**
+- `09.15` 给 **[zdz10124-dev/codex-continue](https://github.com/zdz10124-dev/codex-continue)**
 - `09.14` 开源了 **[yinkesi/shiji-chunqiu-bi](https://github.com/yinkesi/shiji-chunqiu-bi)**
-- `09.14` 推送 1 个提交至 **[yinkesi/yinkesi](https://github.com/yinkesi/yinkesi)**
-- `09.14` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
-- `09.14` 推送 1 个提交至 **[yinkesi/wechat-analysis](https://github.com/yinkesi/wechat-analysis)**
-- `09.14` 推送 1 个提交至 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
 <!-- events:end -->
 
 <!-- quote:start -->
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「都说人无远虑必有近忧，这句话简单来讲就是人这一辈子就没什么安生的日子。」 —— 摸鱼事务所
+> 「原来，天上的星，都是曾被人惦念而又遗忘的梦啊。」 —— 小荷
 
 </details>
 <!-- quote:end -->
