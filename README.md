@@ -59,11 +59,11 @@
 </td>
 <td width="50%" valign="top">
 
-### 🎨 [zcode-vscode](https://github.com/yinkesi/zcode-vscode)
+### 🎨 [gptchat](https://github.com/yinkesi/gptchat)
 
-ZCode Chat for VSCode — 在 VSCode 右侧栏直接使用 ZCode/GLM 编程助手的插件（复用 ZCode 桌面端凭据，驱动完整 Agent）
+gptchat — 多智能体群聊协作平台：AI 智能体进群聊，@提及分工、投票达成共识、跨电脑 bridge 接入
 
-`JavaScript` `ai-assistant` `chatbot` `glm` · <img src="https://img.shields.io/github/stars/yinkesi/zcode-vscode?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`TypeScript` `ai-agents` `collaboration` `group-chat` · <img src="https://img.shields.io/github/stars/yinkesi/gptchat?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 </tr>
@@ -93,7 +93,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
-- `09.16` 推送 1 个提交至 **[yinkesi/shiji-madao-open](https://github.com/yinkesi/shiji-madao-open)**
+- `09.15` 推送 1 个提交至 **[yinkesi/shiji-madao-open](https://github.com/yinkesi/shiji-madao-open)**
 - `09.15` 给 **[zdz10124-dev/ForLearn3d](https://github.com/zdz10124-dev/ForLearn3d)**
 - `09.15` 给 **[zdz10124-dev/chatgpt-visible-history-exporter](https://github.com/zdz10124-dev/chatgpt-visible-history-exporter)**
 - `09.15` 给 **[zdz10124-dev/codex-continue](https://github.com/zdz10124-dev/codex-continue)**
@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「原来，天上的星，都是曾被人惦念而又遗忘的梦啊。」 —— 小荷
+> 「海豚们都走了。」 —— 软件
 
 </details>
 <!-- quote:end -->
