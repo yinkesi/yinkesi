@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「海豚们都走了。」 —— 软件
+> 「愿你遍布祖国山河，觉得人生也值得。」 —— 晓良
 
 </details>
 <!-- quote:end -->
