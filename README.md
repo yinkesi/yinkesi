@@ -79,11 +79,11 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 </td>
 <td width="50%" valign="top">
 
-### 🌐 [shiji-madao-open](https://github.com/yinkesi/shiji-madao-open)
+### 🌐 [lowalt-uav-edu](https://github.com/yinkesi/lowalt-uav-edu)
 
-实验史记·马刀行 —— 开放校园探索 × 马刀战棋网页游戏（据音克思《实验史记》改编）
+翎雁 LY-100 低空智能巡检测绘飞行器一体化设计与仿真验证 · 2026 AI+教育创新应用技能大赛低空装备技术应用赛道参赛作品
 
-`JavaScript` · <img src="https://img.shields.io/github/stars/yinkesi/shiji-madao-open?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`JavaScript` · <img src="https://img.shields.io/github/stars/yinkesi/lowalt-uav-edu?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 </tr>
@@ -93,18 +93,18 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
+- `09.18` 推送 1 个提交至 **[yinkesi/lowalt-uav-edu](https://github.com/yinkesi/lowalt-uav-edu)**
+- `09.18` 推送 1 个提交至 **[yinkesi/shiji-madao-digong](https://github.com/yinkesi/shiji-madao-digong)**
+- `09.18` 推送 1 个提交至 **[yinkesi/nightsail](https://github.com/yinkesi/nightsail)**
+- `09.18` 推送 1 个提交至 **[yinkesi/spectrascope](https://github.com/yinkesi/spectrascope)**
 - `09.15` 推送 1 个提交至 **[yinkesi/shiji-madao-open](https://github.com/yinkesi/shiji-madao-open)**
-- `09.15` 给 **[zdz10124-dev/ForLearn3d](https://github.com/zdz10124-dev/ForLearn3d)**
-- `09.15` 给 **[zdz10124-dev/chatgpt-visible-history-exporter](https://github.com/zdz10124-dev/chatgpt-visible-history-exporter)**
-- `09.15` 给 **[zdz10124-dev/codex-continue](https://github.com/zdz10124-dev/codex-continue)**
-- `09.14` 开源了 **[yinkesi/shiji-chunqiu-bi](https://github.com/yinkesi/shiji-chunqiu-bi)**
 <!-- events:end -->
 
 <!-- quote:start -->
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「愿你遍布祖国山河，觉得人生也值得。」 —— 晓良
+> 「最愚蠢的想法或行为就是信任，从人一旦信的开始，就掉进无底深渊的受骗了。」 —— ngai
 
 </details>
 <!-- quote:end -->
