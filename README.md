@@ -79,11 +79,11 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 </td>
 <td width="50%" valign="top">
 
-### 🌐 [lowalt-uav-edu](https://github.com/yinkesi/lowalt-uav-edu)
+### 🌐 [shiji-rts](https://github.com/yinkesi/shiji-rts)
 
-翎雁 LY-100 低空智能巡检测绘飞行器一体化设计与仿真验证 · 2026 AI+教育创新应用技能大赛低空装备技术应用赛道参赛作品
+实验史记·课间七大恨——以《实验史记》为背景的实时战略闯关游戏，战斗还原千伏工作室兵棋《七大恨》会战制
 
-`JavaScript` · <img src="https://img.shields.io/github/stars/yinkesi/lowalt-uav-edu?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`JavaScript` · <img src="https://img.shields.io/github/stars/yinkesi/shiji-rts?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 </tr>
@@ -93,10 +93,10 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
+- `09.19` 推送 1 个提交至 **[yinkesi/shiji-madao-digong](https://github.com/yinkesi/shiji-madao-digong)**
 - `09.18` 推送 1 个提交至 **[yinkesi/lowalt-uav-edu](https://github.com/yinkesi/lowalt-uav-edu)**
-- `09.18` 推送 1 个提交至 **[yinkesi/shiji-madao-digong](https://github.com/yinkesi/shiji-madao-digong)**
-- `09.18` 推送 1 个提交至 **[yinkesi/nightsail](https://github.com/yinkesi/nightsail)**
 - `09.18` 推送 1 个提交至 **[yinkesi/spectrascope](https://github.com/yinkesi/spectrascope)**
+- `09.18` 推送 1 个提交至 **[yinkesi/nightsail](https://github.com/yinkesi/nightsail)**
 - `09.15` 推送 1 个提交至 **[yinkesi/shiji-madao-open](https://github.com/yinkesi/shiji-madao-open)**
 <!-- events:end -->
 
@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「最愚蠢的想法或行为就是信任，从人一旦信的开始，就掉进无底深渊的受骗了。」 —— ngai
+> 「很多人都认为别人的东西总好过自己的东西，这或许是想要拥有所有东西的理由。」 —— 网络
 
 </details>
 <!-- quote:end -->
