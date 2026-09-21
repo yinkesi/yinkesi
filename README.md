@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「很多人都认为别人的东西总好过自己的东西，这或许是想要拥有所有东西的理由。」 —— 网络
+> 「我完全不想死，所以…要是该战斗的时刻来临，就一定要赢！」 —— 坎公骑冠剑
 
 </details>
 <!-- quote:end -->
