@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「我完全不想死，所以…要是该战斗的时刻来临，就一定要赢！」 —— 坎公骑冠剑
+> 「雨空朱蒼接触崩壊子守歌。」 —— Arcaea
 
 </details>
 <!-- quote:end -->
