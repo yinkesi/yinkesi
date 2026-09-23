@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「雨空朱蒼接触崩壊子守歌。」 —— Arcaea
+> 「学会生活，这应该意味着学会死亡。」 —— 雅克·德里达最后的谈话：我向我自己开战
 
 </details>
 <!-- quote:end -->
