@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「千年后，锦城相吊，遇草堂翁。」 —— 八声甘州·读诸葛武侯传
+> 「世界上有太多孤独的人，都害怕走出第一步。」 —— 绿皮书
 
 </details>
 <!-- quote:end -->
