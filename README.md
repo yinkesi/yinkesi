@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「世界上有太多孤独的人，都害怕走出第一步。」 —— 绿皮书
+> 「整个艺术发展史不是技术熟练程度的发展史，而是观念和要求的变化史。」 —— 艺术的故事
 
 </details>
 <!-- quote:end -->
