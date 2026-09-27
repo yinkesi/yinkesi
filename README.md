@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「整个艺术发展史不是技术熟练程度的发展史，而是观念和要求的变化史。」 —— 艺术的故事
+> 「见过沧海桑田，望过白日飞升，走过拙山枯水，笑过月隐晦明。」 —— 明日方舟
 
 </details>
 <!-- quote:end -->
