@@ -79,11 +79,11 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 </td>
 <td width="50%" valign="top">
 
-### 🌐 [shiji-rts](https://github.com/yinkesi/shiji-rts)
+### 🌐 [agent-tag](https://github.com/yinkesi/agent-tag)
 
-实验史记·课间七大恨——以《实验史记》为背景的实时战略闯关游戏，战斗还原千伏工作室兵棋《七大恨》会战制
+微信群聊形态的 agent 协作平台：@ 即派活，API/CLI/MCP 接入，上下文隔离。Claude Tag 的自托管复刻。
 
-`JavaScript` · <img src="https://img.shields.io/github/stars/yinkesi/shiji-rts?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`JavaScript` · <img src="https://img.shields.io/github/stars/yinkesi/agent-tag?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 </tr>
@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「暂时因缘，百年之后，各随六道，不相系属。」 —— 受十诫文
+> 「めまぐるしい景色の中,君だけが止まって見えた.」 —— グランドエスケープ
 
 </details>
 <!-- quote:end -->
