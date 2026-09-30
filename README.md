@@ -70,20 +70,20 @@ gptchat — 多智能体群聊协作平台：AI 智能体进群聊，@提及分�
 <tr>
 <td width="50%" valign="top">
 
-### 🔍 [dsh-new-designed-ui](https://github.com/yinkesi/dsh-new-designed-ui)
+### 🔍 [zcode-vscode](https://github.com/yinkesi/zcode-vscode)
 
-Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
+ZCode Chat for VSCode — 在 VSCode 右侧栏直接使用 ZCode/GLM 编程助手的插件（复用 ZCode 桌面端凭据，驱动完整 Agent）
 
-`JavaScript` `deepseek` `skin` `theme` · <img src="https://img.shields.io/github/stars/yinkesi/dsh-new-designed-ui?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`JavaScript` `ai-assistant` `chatbot` `glm` · <img src="https://img.shields.io/github/stars/yinkesi/zcode-vscode?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 <td width="50%" valign="top">
 
-### 🌐 [agent-tag](https://github.com/yinkesi/agent-tag)
+### 🌐 [dsh-new-designed-ui](https://github.com/yinkesi/dsh-new-designed-ui)
 
-微信群聊形态的 agent 协作平台：@ 即派活，API/CLI/MCP 接入，上下文隔离。Claude Tag 的自托管复刻。
+Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 
-`JavaScript` · <img src="https://img.shields.io/github/stars/yinkesi/agent-tag?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
+`JavaScript` `deepseek` `skin` `theme` · <img src="https://img.shields.io/github/stars/yinkesi/dsh-new-designed-ui?style=flat-square&color=b48ae0&label=%E2%98%85" height="16" alt="stars"/>
 
 </td>
 </tr>
@@ -93,18 +93,18 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
+- `09.29` 推送 1 个提交至 **[yinkesi/agent-tag](https://github.com/yinkesi/agent-tag)**
 - `09.19` 推送 1 个提交至 **[yinkesi/shiji-madao-digong](https://github.com/yinkesi/shiji-madao-digong)**
 - `09.18` 推送 1 个提交至 **[yinkesi/lowalt-uav-edu](https://github.com/yinkesi/lowalt-uav-edu)**
 - `09.18` 推送 1 个提交至 **[yinkesi/spectrascope](https://github.com/yinkesi/spectrascope)**
 - `09.18` 推送 1 个提交至 **[yinkesi/nightsail](https://github.com/yinkesi/nightsail)**
-- `09.15` 推送 1 个提交至 **[yinkesi/shiji-madao-open](https://github.com/yinkesi/shiji-madao-open)**
 <!-- events:end -->
 
 <!-- quote:start -->
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「めまぐるしい景色の中,君だけが止まって見えた.」 —— グランドエスケープ
+> 「知识是人类进步的阶梯，万代积累的结果，如果它们失传了，人类的时代也就真正落幕了。」 —— «塔罗之书»，TNO启示录事件
 
 </details>
 <!-- quote:end -->
