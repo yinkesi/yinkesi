@@ -93,7 +93,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
-- `09.29` 推送 1 个提交至 **[yinkesi/agent-tag](https://github.com/yinkesi/agent-tag)**
+- `09.30` 推送 1 个提交至 **[yinkesi/agent-tag](https://github.com/yinkesi/agent-tag)**
 - `09.19` 推送 1 个提交至 **[yinkesi/shiji-madao-digong](https://github.com/yinkesi/shiji-madao-digong)**
 - `09.18` 推送 1 个提交至 **[yinkesi/lowalt-uav-edu](https://github.com/yinkesi/lowalt-uav-edu)**
 - `09.18` 推送 1 个提交至 **[yinkesi/spectrascope](https://github.com/yinkesi/spectrascope)**
@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「知识是人类进步的阶梯，万代积累的结果，如果它们失传了，人类的时代也就真正落幕了。」 —— «塔罗之书»，TNO启示录事件
+> 「长河千嶂，大荒孤城，历历在目。」 —— 明日方舟
 
 </details>
 <!-- quote:end -->
