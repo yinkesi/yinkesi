@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「长河千嶂，大荒孤城，历历在目。」 —— 明日方舟
+> 「我们以灵魂为燃料，高举生命的火把。只为了融化这片不可跨越的寒冬。」 —— 战双帕弥什
 
 </details>
 <!-- quote:end -->
