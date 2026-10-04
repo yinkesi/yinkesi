@@ -93,7 +93,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
-- `10.02` 推送 1 个提交至 **[yinkesi/agent-tag](https://github.com/yinkesi/agent-tag)**
+- `10.03` 推送 1 个提交至 **[yinkesi/agent-tag](https://github.com/yinkesi/agent-tag)**
 - `09.19` 推送 1 个提交至 **[yinkesi/shiji-madao-digong](https://github.com/yinkesi/shiji-madao-digong)**
 - `09.18` 推送 1 个提交至 **[yinkesi/lowalt-uav-edu](https://github.com/yinkesi/lowalt-uav-edu)**
 - `09.18` 推送 1 个提交至 **[yinkesi/spectrascope](https://github.com/yinkesi/spectrascope)**
@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「我又不是因为你们的评价才去当的英雄，是因为我想当才去当的。」 —— 一拳超人
+> 「十年OI一场空，不开long long见祖宗。」 —— NOI赛事相关名言
 
 </details>
 <!-- quote:end -->
