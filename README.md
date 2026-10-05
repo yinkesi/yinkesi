@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「十年OI一场空，不开long long见祖宗。」 —— NOI赛事相关名言
+> 「当一个人告诉你他将要离开，说明他还希望有人能够关心，将他拯救：这是最后的求救信号。」 —— 佚名
 
 </details>
 <!-- quote:end -->
