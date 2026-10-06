@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「当一个人告诉你他将要离开，说明他还希望有人能够关心，将他拯救：这是最后的求救信号。」 —— 佚名
+> 「没赶上花开，我就等你看花落。」 —— 难解
 
 </details>
 <!-- quote:end -->
