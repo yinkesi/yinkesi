@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「没赶上花开，我就等你看花落。」 —— 难解
+> 「雨打梨花深闭门，误了青春，忘了青春。」 —— 一剪梅·雨打梨花深闭门
 
 </details>
 <!-- quote:end -->
