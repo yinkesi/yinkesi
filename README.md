@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「越是困难，越要抬起头，地上可找不到任何希望！」 —— Zetman
+> 「现在我们也都还各自活着，我想。」 —— 斯普特尼克恋人
 
 </details>
 <!-- quote:end -->
