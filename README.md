@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「现在我们也都还各自活着，我想。」 —— 斯普特尼克恋人
+> 「一瓶250ml的吊水，一共是3111滴。」 —— 网络
 
 </details>
 <!-- quote:end -->
