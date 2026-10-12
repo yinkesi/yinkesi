@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「红茶的温度和女人心在任何时代都是难以琢磨呢。」 —— 海猫鸣泣之时
+> 「不要太小看人类了！」 —— 加油大魔王
 
 </details>
 <!-- quote:end -->
