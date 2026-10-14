@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「人总是疯癫，不惜牺牲一切。」 —— 失眠
+> 「老鼠不知道自己吃的东西是偷来的，只是在小心翼翼地活着。」 —— 网易云音乐
 
 </details>
 <!-- quote:end -->
