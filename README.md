@@ -93,18 +93,18 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
+- `10.15` 给 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
 - `10.13` 复刻了 **[any-pr/any-pr](https://github.com/any-pr/any-pr)**
 - `10.03` 推送 1 个提交至 **[yinkesi/agent-tag](https://github.com/yinkesi/agent-tag)**
 - `09.19` 推送 1 个提交至 **[yinkesi/shiji-madao-digong](https://github.com/yinkesi/shiji-madao-digong)**
 - `09.18` 推送 1 个提交至 **[yinkesi/lowalt-uav-edu](https://github.com/yinkesi/lowalt-uav-edu)**
-- `09.18` 推送 1 个提交至 **[yinkesi/spectrascope](https://github.com/yinkesi/spectrascope)**
 <!-- events:end -->
 
 <!-- quote:start -->
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「老鼠不知道自己吃的东西是偷来的，只是在小心翼翼地活着。」 —— 网易云音乐
+> 「幸福破灭之时，总是伴随着血腥味。」 —— 鬼灭之刃
 
 </details>
 <!-- quote:end -->
