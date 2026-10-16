@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「幸福破灭之时，总是伴随着血腥味。」 —— 鬼灭之刃
+> 「相思了无益，悔当初相见。」 —— 忆少年·飞花时节
 
 </details>
 <!-- quote:end -->
