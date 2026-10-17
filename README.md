@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「相思了无益，悔当初相见。」 —— 忆少年·飞花时节
+> 「墙上的合照剩一半，你晾的衣服还没干。」 —— 甲乙丙丁 (你我怎么两清)
 
 </details>
 <!-- quote:end -->
