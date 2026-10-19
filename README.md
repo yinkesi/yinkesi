@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「本来阴郁的一天，似乎看到一缕阳光破云而出。」 —— 网易云音乐
+> 「我自己的思考，都是起源于问题。而追寻问题的方法，总是起源于确信。」 —— 思考
 
 </details>
 <!-- quote:end -->
