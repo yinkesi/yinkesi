@@ -102,7 +102,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「有形的东西迟早会凋零，但只有回忆是永远不会凋零的。」 —— 火影忍者
+> 「任尘世繁华，唯有守护你的一切，才是我此生唯一的使命。」 —— 次元战争·红龙
 
 </details>
 <!-- quote:end -->
