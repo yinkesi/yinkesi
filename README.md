@@ -95,6 +95,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <!-- events:start -->
 - `10.15` 给 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
 - `10.13` 复刻了 **[any-pr/any-pr](https://github.com/any-pr/any-pr)**
+- `10.04` 开源了 **[yinkesi/scitag](https://github.com/yinkesi/scitag)**
 - `10.03` 推送 1 个提交至 **[yinkesi/agent-tag](https://github.com/yinkesi/agent-tag)**
 <!-- events:end -->
 
@@ -102,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「任尘世繁华，唯有守护你的一切，才是我此生唯一的使命。」 —— 次元战争·红龙
+> 「十年生死两茫茫，不思量，自难忘。」 —— 江城子·乙卯正月二十日夜记梦
 
 </details>
 <!-- quote:end -->
