@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「十年生死两茫茫，不思量，自难忘。」 —— 江城子·乙卯正月二十日夜记梦
+> 「祈愿万家灯火熨烫过脉络，刀山与火海多深刻，都陪你渡过。」 —— 不痛
 
 </details>
 <!-- quote:end -->
