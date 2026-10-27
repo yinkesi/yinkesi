@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「此时此刻的咱啊，能和汝在一起，是最幸福的了。」 —— 狼与香辛料
+> 「医院的墙听到了比教堂更多的祈祷。」 —— 网易云音乐
 
 </details>
 <!-- quote:end -->
