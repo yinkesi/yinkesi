@@ -93,6 +93,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
+- `10.27` 给 **[YiXin-AILab/KinArc](https://github.com/YiXin-AILab/KinArc)**
 - `10.15` 给 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
 - `10.13` 复刻了 **[any-pr/any-pr](https://github.com/any-pr/any-pr)**
 - `10.04` 开源了 **[yinkesi/scitag](https://github.com/yinkesi/scitag)**
@@ -103,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「医院的墙听到了比教堂更多的祈祷。」 —— 网易云音乐
+> 「正义不会因为无人歌颂而变成非议。」 —— 阿亚罗克年代记
 
 </details>
 <!-- quote:end -->
