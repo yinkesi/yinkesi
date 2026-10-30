@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「以爱回应忠诚，以荣誉回应英勇，以复仇回应背叛」 —— Qihoo360
+> 「君生我未生，我生君已老。 君恨我生迟，我恨君生早。」 —— 全唐诗续拾
 
 </details>
 <!-- quote:end -->
