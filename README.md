@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「君生我未生，我生君已老。 君恨我生迟，我恨君生早。」 —— 全唐诗续拾
+> 「每天早上醒来你有两个选择：一是盖上被子继续做你没做完的梦，二是掀开被子去完成你未完成的梦。」 —— 网易云音乐
 
 </details>
 <!-- quote:end -->
