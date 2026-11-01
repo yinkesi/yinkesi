@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「每天早上醒来你有两个选择：一是盖上被子继续做你没做完的梦，二是掀开被子去完成你未完成的梦。」 —— 网易云音乐
+> 「窈窕淑女，君子好逑。」 —— 关雎
 
 </details>
 <!-- quote:end -->
