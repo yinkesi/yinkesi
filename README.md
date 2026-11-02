@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「窈窕淑女，君子好逑。」 —— 关雎
+> 「不敢打开信封啊。因为，打开了就结束了啊。」 —— 旋风管家
 
 </details>
 <!-- quote:end -->
