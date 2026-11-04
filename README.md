@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「我愿用我余生换你岁月如歌，奈何阳错阴差，也许同归无路，究竟殊途……」 —— 魁拔
+> 「谎言重复一千遍就成了真理。」 —— 纳粹德国宣传部长
 
 </details>
 <!-- quote:end -->
