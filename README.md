@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「谎言重复一千遍就成了真理。」 —— 纳粹德国宣传部长
+> 「生命之美，也不过是每个人都应该以符合其天性和职分的方式去行动。」 —— 路易斯·德·莱昂修士
 
 </details>
 <!-- quote:end -->
