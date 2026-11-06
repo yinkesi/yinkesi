@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「生命之美，也不过是每个人都应该以符合其天性和职分的方式去行动。」 —— 路易斯·德·莱昂修士
+> 「看得见交错的存在，听得见想要沟通的话语，而在今天也细细地品味，名为“邂逅”的那项奇迹。」 —— 夏目友人帐
 
 </details>
 <!-- quote:end -->
