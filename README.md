@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「温柔正确的人总是难以生存，因为这世界既不温柔，也不正确。」 —— 我的青春恋爱物语果然有问题
+> 「我也想杀死伤痛，让那恩怨有始有终。」 —— 县城
 
 </details>
 <!-- quote:end -->
