@@ -93,6 +93,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
+- `11.08` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
 - `10.27` 给 **[YiXin-AILab/KinArc](https://github.com/YiXin-AILab/KinArc)**
 - `10.15` 给 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
 - `10.13` 复刻了 **[any-pr/any-pr](https://github.com/any-pr/any-pr)**
@@ -103,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「我也想杀死伤痛，让那恩怨有始有终。」 —— 县城
+> 「背上背包，带上行囊，去你的世界旅行。」 —— 柯宝宝
 
 </details>
 <!-- quote:end -->
