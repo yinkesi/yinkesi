@@ -104,7 +104,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「她着红衣丝千里，天铺巨网罩深红。」 —— 深红之网
+> 「粗缯大布裹生涯，腹有诗书气自华。」 —— 和董传留别
 
 </details>
 <!-- quote:end -->
