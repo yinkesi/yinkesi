@@ -96,7 +96,6 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 - `11.08` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
 - `10.27` 给 **[YiXin-AILab/KinArc](https://github.com/YiXin-AILab/KinArc)**
 - `10.15` 给 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
-- `10.13` 复刻了 **[any-pr/any-pr](https://github.com/any-pr/any-pr)**
 - `10.04` 开源了 **[yinkesi/scitag](https://github.com/yinkesi/scitag)**
 <!-- events:end -->
 
@@ -104,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「粗缯大布裹生涯，腹有诗书气自华。」 —— 和董传留别
+> 「来时芳华，去时白头。」 —— 吹梦到西洲
 
 </details>
 <!-- quote:end -->
