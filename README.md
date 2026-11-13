@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「来时芳华，去时白头。」 —— 吹梦到西洲
+> 「人的伟大之处是在于面对困难的时候还能摆出崇高的姿态。」 —— 超级教师
 
 </details>
 <!-- quote:end -->
