@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「人的伟大之处是在于面对困难的时候还能摆出崇高的姿态。」 —— 超级教师
+> 「人在遇到才能时抱有的感情有三个，『感叹』 『恐怖』还有『嫉妒』」 —— 轮回的花瓣
 
 </details>
 <!-- quote:end -->
