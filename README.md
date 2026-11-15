@@ -95,7 +95,6 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <!-- events:start -->
 - `11.08` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
 - `10.27` 给 **[YiXin-AILab/KinArc](https://github.com/YiXin-AILab/KinArc)**
-- `10.15` 给 **[yinkesi/my-arduino-project](https://github.com/yinkesi/my-arduino-project)**
 - `10.04` 开源了 **[yinkesi/scitag](https://github.com/yinkesi/scitag)**
 <!-- events:end -->
 
@@ -103,7 +102,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「人在遇到才能时抱有的感情有三个，『感叹』 『恐怖』还有『嫉妒』」 —— 轮回的花瓣
+> 「乱世邯郸生祖龙，书文四方车轨同，青山秋草树丛从。」 —— «春秋»，TNO启示录事件
 
 </details>
 <!-- quote:end -->
