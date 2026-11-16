@@ -102,7 +102,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「乱世邯郸生祖龙，书文四方车轨同，青山秋草树丛从。」 —— «春秋»，TNO启示录事件
+> 「于是我驻足享受无法复制的瞬间。」 —— 网易云Letting Go评论区
 
 </details>
 <!-- quote:end -->
