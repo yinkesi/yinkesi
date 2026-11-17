@@ -102,7 +102,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「于是我驻足享受无法复制的瞬间。」 —— 网易云Letting Go评论区
+> 「成功的花，人们只羡慕她现时的明艳。而当初的芽，却浸透了奋斗的泪泉，洒满了牺牲的血雨！」 —— 成功的花
 
 </details>
 <!-- quote:end -->
