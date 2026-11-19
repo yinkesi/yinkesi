@@ -93,6 +93,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 ## 🧾 最近动态
 
 <!-- events:start -->
+- `11.19` 复刻了 **[zhangshaoming-tongji/DIP](https://github.com/zhangshaoming-tongji/DIP)**
 - `11.08` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
 - `10.27` 给 **[YiXin-AILab/KinArc](https://github.com/YiXin-AILab/KinArc)**
 - `10.04` 开源了 **[yinkesi/scitag](https://github.com/yinkesi/scitag)**
@@ -102,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「曾盛开过一朵，曾不会败落，曾在他眼中流淌过浩瀚的银河。」 —— 不痛
+> 「天下没有不散的宴席，那就放下过去，憧憬未来！」 —— 灵感
 
 </details>
 <!-- quote:end -->
