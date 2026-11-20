@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「天下没有不散的宴席，那就放下过去，憧憬未来！」 —— 灵感
+> 「时光会把你雕刻成你应有的样子。」 —— 网剧棋魂
 
 </details>
 <!-- quote:end -->
