@@ -103,7 +103,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「时光会把你雕刻成你应有的样子。」 —— 网剧棋魂
+> 「知道为什么婴儿出生的时候都会握着手痛哭吗？因为又要来这世间走一遭。」 —— 佚名
 
 </details>
 <!-- quote:end -->
