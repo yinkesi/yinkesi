@@ -96,14 +96,13 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 - `11.19` 复刻了 **[zhangshaoming-tongji/DIP](https://github.com/zhangshaoming-tongji/DIP)**
 - `11.08` 推送 1 个提交至 **[yinkesi/gptchat](https://github.com/yinkesi/gptchat)**
 - `10.27` 给 **[YiXin-AILab/KinArc](https://github.com/YiXin-AILab/KinArc)**
-- `10.04` 开源了 **[yinkesi/scitag](https://github.com/yinkesi/scitag)**
 <!-- events:end -->
 
 <!-- quote:start -->
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「火车是往前开的，去哪并不重要，重要的是窗外的风景。」 —— 爱情公寓
+> 「An apple once a day，keep your enemies away.」 —— 白雪公主
 
 </details>
 <!-- quote:end -->
