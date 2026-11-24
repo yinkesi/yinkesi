@@ -102,7 +102,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「An apple once a day，keep your enemies away.」 —— 白雪公主
+> 「我以为别人尊重我，是因为我很优秀。后来才明白，别人尊重我，是因为别人很优秀。」 —— 理解尊重
 
 </details>
 <!-- quote:end -->
