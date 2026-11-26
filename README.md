@@ -102,7 +102,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「吾虽浪迹天涯，却未迷失本心。」 —— 英雄联盟
+> 「无论在什么时候，在这世间的角落都会有一些人逆着光而来，将温暖洒落人间。」 —— 网易云音乐
 
 </details>
 <!-- quote:end -->
