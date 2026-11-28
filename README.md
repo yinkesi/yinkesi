@@ -101,7 +101,7 @@ Yinkesi — a removable, pure-white Claude-style skin for DeepSeek Harness Web
 <details>
 <summary>每日一句 · Daily Quote</summary>
 
-> 「めまぐるしい景色の中,君だけが止まって見えた.」 —— グランドエスケープ
+> 「吹过小山坡的秋风还带着懵懂。」 —— 我的纸飞机
 
 </details>
 <!-- quote:end -->
